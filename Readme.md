@@ -1,4 +1,61 @@
-# Package Manager - Javascript init
+# CS - Package Manager - Javascript init
+
+## Installation
+
+Init package.json
+
+```
+npm init
+```
+
+Part 1 - Sass
+Sass dependencies
+
+```
+npm install -D sass
+```
+
+Set Sass scripts in package.json
+
+```
+"sass": "sass ./src/sass/styles.scss ./src/css/styles.css",
+"sass-w": "sass --watch ./src/sass/styles.scss ./src/css/styles.css"
+```
+
+Make some CSS change
+Run sass
+
+```
+npm run sass
+or
+npm run sass-w
+```
+
+Part 2 - Vitest
+
+Install vitest dependencies
+
+```
+npm install -D vitest
+```
+
+Set Vitest scripts in package.json
+```
+"test": "vitest run",
+"test-w": "vitest",
+"test-cover": "vitest run --coverage"
+```
+
+Create example test and run test
+
+```
+npm run test
+npm run test-w
+npm run test-cover
+```
+
+Install Vitest extension
+-[Vitest](https://marketplace.visualstudio.com/items?itemName=vitest.explorer)
 
 ## Ex 01
 
